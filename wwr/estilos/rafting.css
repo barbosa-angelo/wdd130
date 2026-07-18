@@ -1,0 +1,87 @@
+:root {
+    --cor-primaria: #003566;
+    /* azul-escuro */
+    --cor-secundario: #00B4D8;
+    /* azul-agua */
+    --cor-destaque1: #FB8500;
+    /* laranja */
+    --cor-destaque2: #F4A261;
+    /* amarelo-sol */
+    --fonte-titulo: "Times New Roman", "Georgia", serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+}
+
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--cor-destaque1);
+    color: white;
+}
+
+article {
+    position: absolute;
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque2);
+    top: 410px;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 10px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
