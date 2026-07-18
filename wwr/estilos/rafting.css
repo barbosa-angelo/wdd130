@@ -1,7 +1,7 @@
 :root {
     --cor-primaria: #003566;
     /* azul-escuro */
-    --cor-secundario: #00B4D8;
+    --cor-secundaria: #00B4D8;
     /* azul-agua */
     --cor-destaque1: #FB8500;
     /* laranja */
@@ -47,7 +47,7 @@ h1 {
     color: white;
 }
 
-article {
+.hero article {
     position: absolute;
     background-color: var(--cor-primaria);
     color: var(--cor-destaque2);
@@ -64,6 +64,10 @@ article {
 
 footer {
     background-color: var(--cor-primaria);
+}
+
+footer p {
+    color: var(--cor-secundaria);
 }
 
 .hero {
