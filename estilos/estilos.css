@@ -1,7 +1,12 @@
 :root {
     --largura-imagem: 150px;
-    --cor-borda: black;
+    --cor-borda: #808080;
     --cor-sombra: gray;
+    --cor-fundo-principal: #FFFFFF;
+    --cor-texto-primario: #1E375A;
+    --cor-texto-secundario: white;
+    --cor-destaque: #00ABE4;
+    --cor-suporte: #DEEBF8;
 }
 
 /* Resetar CSS do meu projeto */
@@ -12,8 +17,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-primario);
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--cor-destaque);
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -21,7 +31,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--cor-texto-secundario);
     display: block;
     padding: 0.5rem;
     font-size: 1.2rem;
@@ -30,7 +40,8 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-texto-primario);
+    padding-bottom: 10px;
     border-bottom: 1px solid var(--cor-borda);
 }
 
@@ -38,8 +49,8 @@ img {
     width: var(--largura-imagem);
     height: auto;
     border: 1px solid var(--cor-borda);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--cor-sombra);
+    padding: 5px;
+    box-shadow: 0 0 20px var(--cor-sombra);
 }
 
 p {
@@ -65,8 +76,9 @@ main img {
     width: var(--largura-imagem);
     height: auto;
     border: 1px solid var(--cor-borda);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--cor-sombra);
+    padding: 5px;
+    box-shadow: 0 0 20px var(--cor-sombra);
+    background-color: white;
     float: right;
 }
 
@@ -87,6 +99,7 @@ aside h2 {
 aside img {
     width: 250px;
     height: auto;
+    background-color: white;
 }
 
 footer {
@@ -101,7 +114,7 @@ footer {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
-    background-color: #eee;
+    background-color: var(--cor-suporte);
     color: #333;
 }
 

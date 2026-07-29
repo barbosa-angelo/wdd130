@@ -29,6 +29,18 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
 h1,
 h2 {
     font-family: var(--fonte-titulo);
@@ -62,8 +74,19 @@ article {
     padding: 8px;
 }
 
+section img {
+    width: 120px;
+    height: auto;
+}
+
+figure {
+    text-align: center;
+}
+
 footer {
     background-color: var(--cor-primaria);
+    display: grid;
+    grid-template-columns: 600px repeat(3, 1fr);
 }
 
 footer p {
@@ -86,10 +109,46 @@ footer p {
     margin: 10px;
 }
 
+.aventura {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row: 100px 100px;
+    align-items: center;
+}
+
+.aventura h2 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    padding-bottom: 30px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: auto;
+}
+
 .redes-sociais a {
     text-decoration: none;
+
 }
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.navegacao {
+    display: flex;
+    list-style: none;
+}
+
+.navegacao li {
+    flex: 1 1 auto;
+}
+
+.navegacao a {
+    display: block;
+    color: navy;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
