@@ -8,6 +8,7 @@
     --cor-destaque2: #F4A261;
     /* amarelo-sol */
     --cor-texto: black;
+    --cor-texto-secundaria: white;
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
@@ -49,7 +50,7 @@ h2 {
     text-align: center;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -87,11 +88,14 @@ figure {
 footer {
     background-color: var(--cor-primaria);
     display: grid;
-    grid-template-columns: 600px repeat(3, 1fr);
+    grid-template-columns: 600px 1fr;
+    align-items: center;
+    text-align: center;
 }
 
 footer p {
-    color: var(--cor-secundaria);
+    color: var(--cor-texto-secundaria);
+    justify-self: end;
 }
 
 .hero {
@@ -129,11 +133,19 @@ footer p {
 
 .redes-sociais a {
     text-decoration: none;
+}
 
+.socialmedia {
+    justify-self: end;
 }
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
 }
 
 .navegacao {
