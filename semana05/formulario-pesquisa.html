@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Usuário</title>
+    <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>HDD130 | Formulário HTML - Pesquisa de Usuário</h1>
+        <form action="">
+            <fieldset>
+                <legend>Informações de Contato</legend>
+                <div class="item-formulario coluna2">
+                    <label for="nome-completo">Nome completo:</label>
+                    <input type="text" id="nome-completo" name="nome-completo" required>
+                </div>
+                <div class="item-formulario coluna2">
+                    <label for="email-do-usuario">E-mail:</label>
+                    <input type="text" id="email-do-usuario" name="email-do-usuario" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Perguntas</legend>
+                <div class="item-formulario coluna1">
+                    <label for="navegador">Qual é o seu navegador favorito?</label>
+                    <select name="navegador" id="navegador">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Edge">Edge</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="item-formulario coluna1">
+                    <label for="pet">Você tem um bichinho de estimação em casa?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <div class="item-formulario">
+                    <label id="label5" for="feedback">Liste os lugares onde você morou:</label>
+                    <textarea name="feedback" id="feedback" rows="4"
+                      placeholder="Belém, Ananindeua, Santo André, São Bernardo"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Enviar Pesquisa</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 | Formulario HTML - Atividade de Pesquisa de Usuário | Ângelo Barbosa</p>
+    </footer>
+</body>
+
+</html>

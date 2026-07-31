@@ -1,0 +1,128 @@
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: #1c5560;
+    --cor-destaque1: #001f36;
+    --cor-destaque2: #dcdcdc;
+    /* --cor-texto: black; */
+    --cor-texto-secundaria: #fbffcd;
+    --fonte-titulo: "Times New Roman", "Georgia", serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-body);
+    font-size: 1.2em;
+    background-color: white;
+    color: var(--cor-primaria);
+}
+
+header {
+    width: 650px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+    color: var(--cor-destaque1);
+    text-align: center;
+    margin: 1rem;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid var(--cor-destaque1);
+    border-radius: 0.5rem;
+    background-color: var(--cor-destaque2);
+    display: grid;
+    place-items: center;
+}
+
+fieldset {
+    width: 588px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 0.9em;
+    border-radius: 0.5rem;
+}
+
+legend {
+    color: var(--cor-destaque1);
+    font-size: 1em;
+    font-weight: 700;
+    padding: .5rem;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: .5rem;
+    font-size: 1.1em;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    width: 200px;
+    height: 0 auto;
+    background-color: var(--cor-destaque1);
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+footer {
+    width: 650px;
+    height: 0 auto;
+    text-align: center;
+    margin: 1rem auto 0;
+    font-size: 0.8em;
+    border-top: 1px solid var(--cor-destaque2);
+    padding: 1rem;
+}
+
+.item-formulario {
+    display: grid;
+    align-items: center;
+}
+
+.item-formulario #label5 {
+    justify-self: center;
+}
+
+.coluna1 {
+    grid-template-columns: 3fr 1fr;
+    margin: .5rem 0;
+}
+
+.coluna2 {
+    grid-template-columns: 1fr 2fr;
+    margin: .5rem 0;
+}
