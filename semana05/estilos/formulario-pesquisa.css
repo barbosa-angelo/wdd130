@@ -84,7 +84,7 @@ input[type="checkbox"] {
 
 button {
     width: 200px;
-    height: 0 auto;
+    margin: 0 auto;
     background-color: var(--cor-destaque1);
     color: white;
     padding: 1rem;
@@ -100,7 +100,7 @@ button:hover {
 
 footer {
     width: 650px;
-    height: 0 auto;
+    margin: 0 auto;
     text-align: center;
     margin: 1rem auto 0;
     font-size: 0.8em;
