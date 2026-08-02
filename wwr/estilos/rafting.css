@@ -114,6 +114,21 @@ footer p {
     margin: 10px;
 }
 
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.historia p {
+    text-align: left;
+}
+
+.historia img {
+    width: 200px;
+    margin: 0 auto;
+}
+
 .aventura {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
