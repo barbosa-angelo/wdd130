@@ -135,6 +135,10 @@ footer p {
     text-decoration: none;
 }
 
+.redes-sociais {
+    justify-self: end;
+}
+
 .socialmedia {
     justify-self: end;
 }
@@ -221,7 +225,7 @@ textarea {
 }
 
 button {
-    background-color: var(--cor-destaque1);
+    background-color: var(--cor-primaria);
     color: white;
     padding: 0.8rem;
     margin: 1rem;
@@ -231,7 +235,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-destaque1);
 }
 
 #check {
