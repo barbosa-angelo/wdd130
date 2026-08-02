@@ -94,7 +94,7 @@ footer {
 }
 
 footer p {
-    color: var(--cor-texto-secundaria);
+    color: white;
     justify-self: end;
 }
 
