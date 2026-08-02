@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Expedição das Águas</title>
+    <meta name="description"
+      content="Página com um formulario de contato e informações de contato da empresa de rafting Expedição das Águas">
+    <meta name="author" content="Ângelo Barbosa">
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo da Expedição das Águas">
+        <nav>
+            <ul class="navegacao">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="dados-empresa">
+            <h1>Expedição das Águas</h1>
+            <p>Rua Rufino Leão, 49, Centro</p>
+            <p>Iguarapé-Miri, Pará</p>
+            <p>+55 91 99932-2399</p>
+            <p>info@expedicaodasaguas.com</p>
+        </div>
+        <section class="mapa-formulario">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1824.9813230020438!2d-48.96077199752856!3d-1.977829800903993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92bcb0aa7ef29c51%3A0x2c29155d5b1741ee!2sIgarap%C3%A9-Miri%2C%20PA%2C%2068430-000!5e1!3m2!1spt-BR!2sbr!4v1785630086634!5m2!1spt-BR!2sbr"
+              width="400" height="450" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <form action="">
+                <div class="item-formulario coluna2">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="item-formulario coluna2">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="item-formulario coluna2">
+                    <p>Propósito da Mensagem</p>
+                    <div class="opcoes">
+                        <label for="opcao1"><input type="radio" id="opcao1" name="tipo_msg"
+                              value="Consulta Geral"> Consulta Geral</label>
+                        <label for="opcao2"><input type="radio" id="opcao2" name="tipo_msg"
+                              value="Pergunta sobre Reserva">
+                            Pergunta sobre Reserva</label>
+                        <label for="opcao3"><input type="radio" id="opcao3" name="tipo_msg"
+                              value="Sugestão de Site"> Sugestão de Site</label>
+                    </div>
+                </div>
+
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" rows="4"
+                  placeholder="Digite aqui"></textarea>
+
+                <label id="check" for="newsletter"><input type="checkbox" name="newsletter"
+                      id="newsletter"> Por
+                    favor, me inscreva na newsletter mensal</label>
+
+
+                <button type="submit">Entrar em Contato!</button>
+            </form>
+        </section>
+        <section class="funcionarios">
+            <h2>Estamos Aqui para Serví-lo</h2>
+            <figure>
+                <img src="imagens/profissional1.jpg" alt="Instrutor de segurança">
+                <figcaption>Safety Kayaker</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/profissional2.jpg" alt="pessoas praticando rafting">
+                <figcaption>Coordenadora de Base</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/profissional3.jpg" alt="pessoas praticando rafting">
+                <figcaption>Condutor de Rafting</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p> &copy;2026 Expedição das Águas | Ângelo Barbosa</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.svg"
+                  alt="Ícone do Facebook"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="imagens/linkedin.svg"
+                  alt="Ícone do LinkedIn"></a>
+            <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.svg"
+                  alt="Ícone do Instagram"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
